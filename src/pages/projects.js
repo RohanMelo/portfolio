@@ -39,6 +39,22 @@ class Generic extends React.Component {
               </div>
             </div>
 
+            <h2 style={{ marginTop: '20px' }}><a href="https://github.com/RohanMelo/cinne-lead" target="_blank">Cinne Lead</a></h2>
+            <p>A React Native mobile client for TheMovieDB. Displays movies that are now playing in theaters, lets the user search movies by movie name or genres and displays more details about a selected movie. It was made with accessibility in mind, it is TalkBack and font scaling friendly with high contrast colors.</p>
+
+            <div style={{ display: 'flex' }}>
+              <div>
+
+                <ModalImage
+                  small={'https://i.postimg.cc/tJ6YKMcz/cinnesmall.jpg'}
+                  large={'https://i.postimg.cc/pXN9fP9c/cinne.jpg'}
+                  alt="Cinne Lead screenshots"
+                />
+
+              </div>
+
+            </div>
+
             <h2 style={{ marginTop: '20px' }}><a href="https://github.com/RohanMelo/rpsls" target="_blank">Rock Paper Scissors Lizard Spock</a></h2>
             <p>RPSLS is an extension of the classic game of chance Rock Paper Scissors. It was made popular by The Big Bang Theory series, and you have much less chance to get a tie compared to the original game. This version is for React Native, uses a simple touch to start the game and face the computer opponent. The computer choice is randomly selected, and then the results are shown - I've consciously avoided a long chain of ifs/elses on this one, of course. Screenshots: </p>
             <div style={{ display: 'flex' }}>
