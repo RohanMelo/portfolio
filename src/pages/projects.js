@@ -4,7 +4,11 @@ import ModalImage from "react-modal-image";
 
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
-import pic04 from '../assets/images/pic04.jpg'
+
+import boxtsmall from '../assets/images/small/boxtsmall.jpg'
+import boxtlarge from '../assets/images/small/boxtlarge.jpg'
+import casmall from '../assets/images/small/casmall.jpg'
+import calarge from '../assets/images/small/calarge.jpg'
 
 class Generic extends React.Component {
   render() {
@@ -16,6 +20,38 @@ class Generic extends React.Component {
         <div id="main">
           <section id="content" className="main">
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
+            <h2><a href="https://www.drinkboxt.com" target="_blank">BOXT</a></h2>
+            <p>A web app for USA&aptr;s biggest boxed wine seller. It has the usual e-commerce features, plus a complete dashboard where the client may change any copy in the site easily with no code and a custom blog. Made with React, Redux, Next and Ruby on Rails.</p>
+
+            <div style={{ display: 'flex' }}>
+              <div>
+
+                <ModalImage
+                  small={boxtsmall}
+                  large={boxtlarge}
+                  alt="BOXT screenshots"
+                />
+
+              </div>
+
+            </div>
+
+            <h2 style={{ marginTop: '20px' }}><a href="https://www.containeralliance.com/#/" target="_blank">Container Alliance</a></h2>
+            <p>A web app for USA&aptr;s biggest container business. It connects to many different container sellers based on the customer's region. It has a full dashboard which provides data about sellers, customers and leads. Made with Vuejs, Nuxt and Ruby on Rails.</p>
+
+            <div style={{ display: 'flex' }}>
+              <div>
+
+                <ModalImage
+                  small={casmall}
+                  large={calarge}
+                  alt="Container Alliance screenshots"
+                />
+
+              </div>
+
+            </div>
+
             <h2><a href="https://github.com/RohanMelo/cocktail-collector-frontend" target="_blank">Cocktail Collector</a></h2>
             <p>Cocktail Collector is an app for users to share their cocktail recipes. It's possible to create new cocktails once logged in, edit recipes, delete cocktails and of course, browse your collection using a search bar. It is made in React, fully-responsive and designed with a 'mobile-first' pattern, with the help of TailwindCSS. Some screenshots and a responsive design example:</p>
 
