@@ -6,9 +6,15 @@ import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
 
 import boxtsmall from '../assets/images/small/boxtsmall.jpg'
-import boxtlarge from '../assets/images/small/boxtlarge.jpg'
-import casmall from '../assets/images/small/casmall.jpg'
-import calarge from '../assets/images/small/calarge.jpg'
+import boxtlarge from '../assets/images/large/boxtlarge.jpg'
+import casmall2 from '../assets/images/small/casmall2.jpg'
+import calarge from '../assets/images/large/calarge.jpg'
+import axilsmall from '../assets/images/small/axilsmall.jpg'
+import axil from '../assets/images/large/axil.jpg'
+import fiscalize01small from '../assets/images/small/fiscalize01small.jpg'
+import fiscalize01 from '../assets/images/large/fiscalize01.jpg'
+import fiscalize02small from '../assets/images/small/fiscalize02small.jpg'
+import fiscalize02 from '../assets/images/large/fiscalize02.jpg'
 
 class Generic extends React.Component {
   render() {
@@ -20,8 +26,32 @@ class Generic extends React.Component {
         <div id="main">
           <section id="content" className="main">
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
-            <h2><a href="https://www.drinkboxt.com" target="_blank">BOXT</a></h2>
-            <p>A web app for USA&aptr;s biggest boxed wine seller. It has the usual e-commerce features, plus a complete dashboard where the client may change any copy in the site easily with no code and a custom blog. Made with React, Redux, Next and Ruby on Rails.</p>
+
+            <h2><a href="https://fiscalize.agefis.fortaleza.ce.gov.br/v2/#/" target="_blank">Fiscalize Fortaleza</a></h2>
+            <p>I created and maintained the law enforcement system for the city of Fortaleza in Brazil. Since Fortaleza is a city with 3million+ citizens, this was a massive system with data coming from many different sources and used on a daily basis by all law enforcement agents and managers. It was made using React, Redux and a Java backend.</p>
+
+            <div style={{ display: 'flex' }}>
+              <div>
+
+                <ModalImage
+                  small={fiscalize01small}
+                  large={fiscalize01}
+                  alt="Fiscalize Dashboard Screen"
+                />
+
+              </div>
+              <div style={{ marginLeft: '20px' }}>
+                <ModalImage
+                  small={fiscalize02small}
+                  large={fiscalize02}
+                  alt="Fiscalize screen"
+                />
+
+              </div>
+            </div>
+
+            <h2 style={{ marginTop: '20px' }}><a href="https://www.drinkboxt.com" target="_blank">BOXT</a></h2>
+            <p>A web app for USA&apos;s biggest boxed wine seller. It has the usual e-commerce features, plus a complete dashboard where the client may change any copy in the site easily with no code and a custom blog. Made with React, Redux, Next and Ruby on Rails.</p>
 
             <div style={{ display: 'flex' }}>
               <div>
@@ -37,13 +67,13 @@ class Generic extends React.Component {
             </div>
 
             <h2 style={{ marginTop: '20px' }}><a href="https://www.containeralliance.com/#/" target="_blank">Container Alliance</a></h2>
-            <p>A web app for USA&aptr;s biggest container business. It connects to many different container sellers based on the customer's region. It has a full dashboard which provides data about sellers, customers and leads. Made with Vuejs, Nuxt and Ruby on Rails.</p>
+            <p>A web app for USA&apos;s largest network of storage containers. It connects to many different container sellers based on the customer's region. It has a full dashboard which provides data about sellers, customers and leads. Made with Vuejs, Nuxt and Ruby on Rails.</p>
 
             <div style={{ display: 'flex' }}>
               <div>
 
                 <ModalImage
-                  small={casmall}
+                  small={casmall2}
                   large={calarge}
                   alt="Container Alliance screenshots"
                 />
@@ -52,7 +82,23 @@ class Generic extends React.Component {
 
             </div>
 
-            <h2><a href="https://github.com/RohanMelo/cocktail-collector-frontend" target="_blank">Cocktail Collector</a></h2>
+            <h2 style={{ marginTop: '20px' }}><a href="https://www.goaxil.com/pages/gsextreme" target="_blank">Mediawire speed pages</a></h2>
+            <p>I had to develop various landing pages for different Media wire products. One thing to notice is that they had to be pixel perfect, responsive and FAST. I had to learn a lot about page optimization to solve this client's problem. Most of these were built with React and Vue with Next/Nuxt and Tailwindcss.</p>
+
+            <div style={{ display: 'flex' }}>
+              <div>
+
+                <ModalImage
+                  small={axilsmall}
+                  large={axil}
+                  alt="Media Wire screenshots"
+                />
+
+              </div>
+
+            </div>
+
+            <h2 style={{ marginTop: '20px' }}><a href="https://github.com/RohanMelo/cocktail-collector-frontend" target="_blank">Cocktail Collector</a></h2>
             <p>Cocktail Collector is an app for users to share their cocktail recipes. It's possible to create new cocktails once logged in, edit recipes, delete cocktails and of course, browse your collection using a search bar. It is made in React, fully-responsive and designed with a 'mobile-first' pattern, with the help of TailwindCSS. Some screenshots and a responsive design example:</p>
 
             <div style={{ display: 'flex' }}>
