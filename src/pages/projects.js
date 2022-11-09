@@ -15,6 +15,8 @@ import fiscalize01small from '../assets/images/small/fiscalize01small.jpg'
 import fiscalize01 from '../assets/images/large/fiscalize01.jpg'
 import fiscalize02small from '../assets/images/small/fiscalize02small.jpg'
 import fiscalize02 from '../assets/images/large/fiscalize02.jpg'
+import screen01 from '../assets/images/small/screen01.jpg'
+import advise01 from '../assets/images/small/advise01.jpg'
 
 class Generic extends React.Component {
   render() {
@@ -27,7 +29,30 @@ class Generic extends React.Component {
           <section id="content" className="main">
             {/* <span className="image main"><img src={pic04} alt="" /></span> */}
 
-            <h2><a href="https://fiscalize.agefis.fortaleza.ce.gov.br/v2/#/" target="_blank">Fiscalize Fortaleza</a></h2>
+            <h2><a href="https://turn.ai" target="_blank">Turn Technologies Screen App</a></h2>
+            <p>I worked on Turn's Screening app, one of the most advanced Human Resources apps for background checks in the industry.</p>
+
+            <div style={{ display: 'flex' }}>
+              <div>
+
+                <ModalImage
+                  small={screen01}
+                  large={screen01}
+                  alt="Screen dashboard"
+                />
+
+              </div>
+              <div style={{ marginLeft: '20px' }}>
+                <ModalImage
+                  small={advise01}
+                  large={advise01}
+                  alt="Advise dashboard"
+                />
+
+              </div>
+            </div>
+
+            <h2 style={{ marginLeft: '20px' }}><a href="https://fiscalize.agefis.fortaleza.ce.gov.br/v2/#/" target="_blank">Fiscalize Fortaleza</a></h2>
             <p>I created and maintained the law enforcement system for the city of Fortaleza in Brazil. Since Fortaleza is a city with 3million+ citizens, this was a massive system with data coming from many different sources and used on a daily basis by all law enforcement agents and managers. It was made using React, Redux and a Java backend.</p>
 
             <div style={{ display: 'flex' }}>
